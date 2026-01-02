@@ -18,6 +18,7 @@
     href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
     rel="stylesheet">
   <!-- Custom CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="styles.css">
   <script>
     (function () {
@@ -41,104 +42,133 @@
   <!-- --------------------------------first section (Modern Split Redesigned) ------------------------------------->
   <div class="kb-header-spacer"></div>
 
-  <section class="kb-hero-split-section position-relative overflow-hidden">
+  <section class="kb-hero-cinematic position-relative overflow-hidden d-flex align-items-center">
+    <!-- Background Decor -->
+    <div class="kb-hero-bg-pattern"></div>
+    <div class="kb-hero-glow"></div>
+
     <div class="container position-relative z-2">
       <div class="row align-items-center min-vh-75 py-5">
 
         <!-- LEFT TEXT CONTENT -->
-        <div class="col-lg-5 mb-5 mb-lg-0 pe-lg-4">
+        <div class="col-lg-6 mb-5 mb-lg-0 pe-lg-5">
           <div class="animate-fade-in-up" style="animation-delay: 0.1s;">
-            <span
-              class="badge bg-soft-primary text-primary mb-2 px-3 py-2 rounded-pill fw-bold text-uppercase tracking-wide border border-primary border-opacity-10">
-              Ministry of Home Affairs
-            </span>
+            <div class="d-inline-flex align-items-center glass-pill px-3 py-2 rounded-pill mb-3">
+              <span class="badge bg-warning text-dark me-2">GOI</span>
+              <span class="text-white small fw-bold tracking-wide text-uppercase">Ministry of Home Affairs</span>
+            </div>
           </div>
 
-          <h1 class="display-5 fw-bold mb-2 kb-hero-split-title animate-fade-in-up" style="animation-delay: 0.2s;">
-            Narcotics <br>
-            <span class="text-gradient-primary">Control Bureau</span>
+          <h1 class="display-5 fw-extra-bold mb-3 text-white animate-fade-in-up"
+            style="animation-delay: 0.2s; line-height: 1.1;">
+            Guardians of a <br>
+            <span class="text-gradient-gold">Drug-Free India</span>
           </h1>
 
-          <p class="lead text-secondary mb-3 opacity-90 animate-fade-in-up" style="animation-delay: 0.3s;">
-            Apex coordinating agency ensuring a <strong>Drug-Free India</strong>. We are committed to stringent
-            enforcement, intelligence rooted in <strong>Article 47</strong>, and international cooperation for a safer
-            tomorrow.
+          <p class="lead text-white-50 mb-4 animate-fade-in-up" style="animation-delay: 0.3s; font-weight: 300;">
+            <strong>Narcotics Control Bureau</strong> leads the nation's fight against drug trafficking.
+            Committed to intelligence-driven enforcement and a safer tomorrow.
           </p>
 
-          <div class="d-flex gap-3 animate-fade-in-up" style="animation-delay: 0.4s;">
-            <a href="about.html" class="btn btn-primary btn-lg rounded-pill px-4 py-2 fw-bold shadow-lg btn-glow">
-              Explore <i class="fas fa-arrow-right ms-2"></i>
+          <div class="d-flex flex-wrap gap-3 animate-fade-in-up" style="animation-delay: 0.4s;">
+            <a href="about.html"
+              class="btn btn-gradient-gold rounded-pill px-5 py-3 fw-bold shadow-lg text-uppercase tracking-wider">
+              Our Mission
             </a>
-            <a href="#contact" class="btn btn-outline-primary btn-lg rounded-pill px-4 py-2 fw-bold">
-              Contact Us
+            <a href="#contact"
+              class="btn btn-glass-outline rounded-pill px-5 py-3 fw-bold text-uppercase tracking-wider">
+              Report Crime
             </a>
           </div>
 
-          <!-- Social Icons -->
-          <div class="mt-3 pt-2 border-top d-inline-flex gap-3 animate-fade-in-up" style="animation-delay: 0.5s;">
-            <span class="text-muted small align-self-center me-2 fw-semibold">Connect:</span>
-            <a href="#" class="btn btn-icon btn-light rounded-circle shadow-sm text-primary hover-scale"><i
-                class="bi bi-twitter-x"></i></a>
-            <a href="#" class="btn btn-icon btn-light rounded-circle shadow-sm text-primary hover-scale"><i
-                class="bi bi-facebook"></i></a>
-            <a href="#" class="btn btn-icon btn-light rounded-circle shadow-sm text-primary hover-scale"><i
-                class="bi bi-instagram"></i></a>
-          </div>
-        </div>
-
-        <!-- RIGHT SLIDER CARD -->
-        <div class="col-lg-7 position-relative">
-          <!-- Decoration behind slider -->
-          <div
-            class="position-absolute top-0 end-0 translate-middle-y bg-primary opacity-10 rounded-circle blur-3xl animate-pulse-slow"
-            style="width: 300px; height: 300px; z-index: -1;"></div>
-
-          <div class="kb-hero-card-slider shadow-2xl rounded-4 overflow-hidden animate-fade-in-up">
-            <div id="kbHeroSplitSlider" class="carousel slide carousel-fade" data-bs-ride="carousel"
-              data-bs-interval="4000">
-
-              <div class="carousel-indicators mb-3">
-                <button type="button" data-bs-target="#kbHeroSplitSlider" data-bs-slide-to="0"
-                  class="active rounded-pill" style="width: 20px; height: 6px;"></button>
-                <button type="button" data-bs-target="#kbHeroSplitSlider" data-bs-slide-to="1" class="rounded-pill"
-                  style="width: 20px; height: 6px;"></button>
-                <button type="button" data-bs-target="#kbHeroSplitSlider" data-bs-slide-to="2" class="rounded-pill"
-                  style="width: 20px; height: 6px;"></button>
-              </div>
-
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="img/slider3.jpg" class="d-block w-100" style="object-fit: cover;" alt="NCB Action">
-                </div>
-                <div class="carousel-item">
-                  <img src="img/slider2.png" class="d-block w-100" style="object-fit: cover;" alt="NCB Team">
-                </div>
-                <div class="carousel-item">
-                  <img src="img/slider1.jpg" class="d-block w-100" style="object-fit: cover;" alt="NCB Awareness">
-                </div>
-              </div>
-
-              <button class="carousel-control-prev" type="button" data-bs-target="#kbHeroSplitSlider"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon bg-dark rounded-circle p-3 bg-opacity-25"
-                  aria-hidden="true"></span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#kbHeroSplitSlider"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon bg-dark rounded-circle p-3 bg-opacity-25"
-                  aria-hidden="true"></span>
-              </button>
-
+          <!-- Stats / Trust Indicators -->
+          <div class="mt-5 pt-4 border-top border-white border-opacity-10 d-flex gap-5 animate-fade-in-up"
+            style="animation-delay: 0.5s;">
+            <div>
+              <h3 class="fw-bold text-white mb-0">1986</h3>
+              <small class="text-white-50 text-uppercase tracking-wider">Established</small>
+            </div>
+            <div>
+              <h3 class="fw-bold text-white mb-0">24/7</h3>
+              <small class="text-white-50 text-uppercase tracking-wider">Enforcement</small>
+            </div>
+            <div>
+              <h3 class="fw-bold text-white mb-0">Pan-India</h3>
+              <small class="text-white-50 text-uppercase tracking-wider">Presence</small>
             </div>
           </div>
         </div>
 
+        <!-- RIGHT VISUALS (3D Floating Stack) -->
+        <div class="col-lg-6 position-relative text-center">
+
+          <div class="kb-3d-frame animate-float-y">
+            <!-- Decorative Circle -->
+            <div class="kb-circle-decor"></div>
+
+            <!-- Main Slider Image inside a Frame -->
+            <div
+              class="kb-hero-card-slider shadow-2xl rounded-4 overflow-hidden position-relative z-2 border-4 border-white-10">
+              <div id="kbHeroSplitSlider" class="carousel slide carousel-fade" data-bs-ride="carousel"
+                data-bs-interval="3000">
+                <div class="carousel-indicators kb-custom-indicators">
+                  <button type="button" data-bs-target="#kbHeroSplitSlider" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#kbHeroSplitSlider" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#kbHeroSplitSlider" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/slider3.jpg" class="d-block w-100" style="object-fit: cover; height: 350px;"
+                      alt="NCB Action">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/slider2.png" class="d-block w-100" style="object-fit: cover; height: 350px;"
+                      alt="NCB Team">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/slider1.jpg" class="d-block w-100" style="object-fit: cover; height: 350px;"
+                      alt="NCB Awareness">
+                  </div>
+                </div>
+              </div>
+              <!-- Slider Controls -->
+              <button class="carousel-control-prev kb-carousel-control-sm" type="button"
+                data-bs-target="#kbHeroSplitSlider" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next kb-carousel-control-sm" type="button"
+                data-bs-target="#kbHeroSplitSlider" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Floating Badges -->
+          <div class="kb-floating-badge badge-1 glass-panel p-3 rounded-3 shadow-lg">
+            <i class="fas fa-shield-alt text-warning fs-4 mb-2"></i>
+            <h6 class="mb-0 fw-bold">Zero Tolerance</h6>
+          </div>
+
+          <div class="kb-floating-badge badge-2 glass-panel p-3 rounded-3 shadow-lg">
+            <i class="fas fa-globe text-info fs-4 mb-2"></i>
+            <h6 class="mb-0 fw-bold">Global Intel</h6>
+          </div>
+
+        </div>
+
       </div>
+
+    </div>
     </div>
   </section>
 
   <!-- ANNOUNCEMENT STRIP -->
-  <!-- <div class="kb-announcement-bar bg-dark text-white border-bottom py-2 position-relative z-2">
+  <div class="kb-announcement-bar text-white border-bottom py-2 position-relative z-2">
     <div class="container d-flex align-items-center">
 
       <div class="kb-announce-label badge bg-danger text-uppercase tracking-wider me-2 shadow-sm">
@@ -152,9 +182,8 @@
       <div
         class="kb-ticker-wrapper flex-grow-1 bg-white bg-opacity-10 rounded-pill border border-secondary px-3 py-1 mx-2 shadow-inner overflow-hidden position-relative">
         <div class="kb-ticker-content text-light small fw-medium d-flex align-items-center h-100">
-          <span class="d-inline-block">🚨 NCB seizes record quantity of contraband in high-seas operation.
-            &nbsp;&nbsp;&bull;&nbsp;&nbsp; 📢 New recruitment guidelines released for 2026.
-            &nbsp;&nbsp;&bull;&nbsp;&nbsp; 📅 International Day Against Drug Abuse to be observed on June 26th.</span>
+          <span class="d-inline-block">Live webcast of Police Commemoration Day Parade, National Police Memorial, New
+            Delhi on October 21 from 0800 hrs</span>
         </div>
       </div>
 
@@ -162,50 +191,163 @@
         View All <i class="fas fa-arrow-right ms-1"></i>
       </a>
     </div>
-  </div> -->
+  </div>
 
-  <!-- -------------------------------- SECTION 3: CORE VALUES ------------------------------------->
-  <section class="kb-core-values py-5 position-relative overflow-hidden">
-    <!-- Background Decor (Optional) -->
-    <div class="position-absolute top-0 start-0 w-100 h-100 z-0 opacity-10"
-      style="background: radial-gradient(circle at 50% 50%, #4cc9f0 0%, transparent 50%); mix-blend-mode: overlay;">
+  <!-- DG MESSAGE SECTION (OFFICIAL LIGHT THEME) -->
+  <section class="kb-dg-section-light py-5 position-relative border-bottom">
+    <div class="container">
+      <div class="row align-items-center g-5">
+
+        <!-- Left: Official Portrait -->
+        <div class="col-lg-4 text-center">
+          <div class="kb-dg-card-light p-3 bg-white rounded-3 shadow-sm position-relative d-inline-block">
+            <div class="position-relative overflow-hidden rounded-2 border border-secondary border-opacity-10">
+              <img src="img/profile.jpeg" alt="Shri Anurag Garg, IPS" class="img-fluid"
+                style="max-height: 350px; object-fit: cover;">
+            </div>
+            <div class="mt-3">
+              <h4 class="fw-bold text-dark mb-0">Shri Anurag Garg, IPS</h4>
+              <p class="text-secondary small mb-1">Director General, NCB</p>
+              <div class="kb-sep-line mx-auto bg-warning my-2" style="width: 50px; height: 2px;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Message Content -->
+        <div class="col-lg-8">
+          <div class="ps-lg-4">
+            <div class="d-flex align-items-center mb-3">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Emblem_of_India.svg" alt="Emblem"
+                style="height: 40px;" class="me-3 opacity-75">
+              <h6 class="text-uppercase text-secondary fw-bold letter-spacing-2 mb-0">Message from the Director General
+              </h6>
+            </div>
+
+            <h2 class="display-6 fw-bold text-dark mb-4">Guardians of a <span class="text-primary">Healthy Nation</span>
+            </h2>
+
+            <div class="kb-dg-message text-muted lead" style="font-size: 1.1rem; line-height: 1.8;">
+              <p>
+                "The Narcotics Control Bureau is not just an enforcement agency; we are the guardians of our nation's
+                future. Our mandate goes beyond seizures—it is about protecting our youth, our families, and our society
+                from the scourge of drugs."
+              </p>
+              <p class="fs-6">
+                We are adopting a <strong>zero-tolerance policy</strong> towards drug trafficking while ensuring a
+                humane approach for victims of substance abuse. Through robust intelligence, cutting-edge technology,
+                and international cooperation, we are dismantling illicit networks and building a <span
+                  class="text-dark fw-semibold">Nasha Mukt Bharat</span>.
+              </p>
+            </div>
+
+            <div class="d-flex align-items-center mt-5">
+              <div class="kb-dg-signature">
+                <span class="signature-font text-dark fs-2">Anurag Garg</span>
+              </div>
+              <div class="ms-auto">
+                <a href="#" class="btn btn-outline-dark rounded-pill px-4 hover-lift">Read Full Message</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- -------------------------------- SECTION 3: CORE VALUES (MODERN REDESIGN) ------------------------------------->
+  <!-- -------------------------------- SECTION 3: CORE VALUES (PREMIUM GLASS) ------------------------------------->
+  <section class="kb-core-values-premium py-5 position-relative overflow-hidden"
+    style="background: radial-gradient(circle at top center, #f8f9fa, #e9ecef);">
+
+    <!-- Animated Gradient Background -->
+    <div class="position-absolute top-0 start-0 w-100 h-100 opacity-25"
+      style="background: radial-gradient(circle at 20% 20%, rgba(13, 110, 253, 0.15) 0%, transparent 40%), 
+                    radial-gradient(circle at 80% 80%, rgba(255, 193, 7, 0.15) 0%, transparent 40%); filter: blur(40px);">
     </div>
 
-    <div class="container position-relative z-1">
+    <div class="container position-relative z-2">
       <div class="row g-4 justify-content-center">
+
         <!-- Card 1: Motto -->
-        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-          <div class="kb-value-card h-100 p-4 text-center rounded-4 position-relative overflow-hidden">
-            <div class="kb-card-decor"></div>
-            <div class="kb-icon-wrapper mb-4 mx-auto rounded-circle d-flex align-items-center justify-content-center">
-              <i class="fas fa-users fs-2"></i>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+          <div class="kb-glass-card-premium h-100 p-5 rounded-4 position-relative">
+            <div class="position-absolute top-0 end-0 p-4 opacity-10">
+              <i class="fas fa-users display-1"></i>
             </div>
-            <h3 class="h4 fw-bold mb-3">Our Motto</h3>
-            <p class="mb-0">Intelligence, Enforcement, Coordination</p>
+
+            <div class="d-flex flex-column h-100 position-relative z-2">
+              <div
+                class="kb-icon-box mb-4 bg-gradient-primary-soft text-primary rounded-4 d-flex align-items-center justify-content-center shadow-sm hover-rotate-icon"
+                style="width: 70px; height: 70px;">
+                <i class="fas fa-users fs-2"></i>
+              </div>
+
+              <h3 class="h4 kb-gradient-text-premium mb-3">Our Motto</h3>
+              <p class="text-secondary mb-4 flex-grow-1" style="font-size: 1.05rem;">
+                Fostering <strong class="text-dark">Intelligence</strong>, ensuring strict <strong
+                  class="text-dark">Enforcement</strong>, and building seamless <strong
+                  class="text-dark">Coordination</strong> across all agencies.
+              </p>
+
+              <div class="mt-auto pt-3 border-top border-light">
+                <span class="text-uppercase text-primary fw-bold small letter-spacing-2">Unity in Action</span>
+              </div>
+            </div>
           </div>
         </div>
 
         <!-- Card 2: Mission -->
-        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-          <div class="kb-value-card h-100 p-4 text-center rounded-4 position-relative overflow-hidden">
-            <div class="kb-card-decor"></div>
-            <div class="kb-icon-wrapper mb-4 mx-auto rounded-circle d-flex align-items-center justify-content-center">
-              <i class="fas fa-chart-line fs-2"></i>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+          <div class="kb-glass-card-premium h-100 p-5 rounded-4 position-relative">
+            <div class="position-absolute top-0 end-0 p-4 opacity-10">
+              <i class="fas fa-shield-alt display-1 text-warning"></i>
             </div>
-            <h3 class="h4 fw-bold mb-3">Our Mission</h3>
-            <p class="mb-0">Prevent and combat abuse and illicit traffic of drugs</p>
+
+            <div class="d-flex flex-column h-100 position-relative z-2">
+              <div
+                class="kb-icon-box mb-4 bg-gradient-warning-soft text-warning rounded-4 d-flex align-items-center justify-content-center shadow-sm hover-rotate-icon"
+                style="width: 70px; height: 70px;">
+                <i class="fas fa-shield-alt fs-2"></i>
+              </div>
+
+              <h3 class="h4 kb-gradient-text-premium mb-3">Our Mission</h3>
+              <p class="text-secondary mb-4 flex-grow-1" style="font-size: 1.05rem;">
+                To <strong class="text-dark">Prevent</strong> and <strong class="text-dark">Combat</strong> the abuse
+                and illicit traffic of drugs, safeguarding the health of our nation.
+              </p>
+
+              <div class="mt-auto pt-3 border-top border-light">
+                <span class="text-uppercase text-warning fw-bold small letter-spacing-2">Safeguarding Society</span>
+              </div>
+            </div>
           </div>
         </div>
 
         <!-- Card 3: Vision -->
-        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-          <div class="kb-value-card h-100 p-4 text-center rounded-4 position-relative overflow-hidden">
-            <div class="kb-card-decor"></div>
-            <div class="kb-icon-wrapper mb-4 mx-auto rounded-circle d-flex align-items-center justify-content-center">
-              <i class="fas fa-eye fs-2"></i>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+          <div class="kb-glass-card-premium h-100 p-5 rounded-4 position-relative">
+            <div class="position-absolute top-0 end-0 p-4 opacity-10">
+              <i class="fas fa-eye display-1 text-success"></i>
             </div>
-            <h3 class="h4 fw-bold mb-3">Our Vision</h3>
-            <p class="mb-0">Endeavour for a drug free society</p>
+
+            <div class="d-flex flex-column h-100 position-relative z-2">
+              <div
+                class="kb-icon-box mb-4 bg-gradient-success-soft text-success rounded-4 d-flex align-items-center justify-content-center shadow-sm hover-rotate-icon"
+                style="width: 70px; height: 70px;">
+                <i class="fas fa-eye fs-2"></i>
+              </div>
+
+              <h3 class="h4 kb-gradient-text-premium mb-3">Our Vision</h3>
+              <p class="text-secondary mb-4 flex-grow-1" style="font-size: 1.05rem;">
+                Endeavour for a <strong class="text-dark">Drug Free Society</strong> where youth can thrive without the
+                shadow of substance abuse.
+              </p>
+
+              <div class="mt-auto pt-3 border-top border-light">
+                <span class="text-uppercase text-success fw-bold small letter-spacing-2">A Better Tomorrow</span>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -220,168 +362,233 @@
 
     <!-- National Policy Intro Section -->
     <!-- National Policy Intro Section (2-Column Redesign) -->
-    <section class="kb-intro-policy py-5">
-      <div class="container">
-        <div class="row align-items-center">
+    <!-- National Policy Intro Section (Perfect Redesign) -->
+    <!-- National Policy Intro Section (Comprehensive Redesign) -->
+    <!-- SECTION 1: FOUNDATION (Bento Grid) -->
+    <section class="kb-policy-foundation" id="policy-foundation">
+      <div class="kb-policy-bg-decor"></div>
+      <div class="container kb-policy-content">
 
-          <!-- Left Column: Content -->
-          <div class="col-lg-7 mb-4 mb-lg-0">
-            <div class="pe-lg-4">
-              <span
-                class="badge bg-light text-primary mb-3 px-3 py-2 rounded-pill fw-bold border border-primary border-opacity-25">Constitutional
-                Mandate</span>
-              <h2 class="display-6 fw-bold mb-4" style="color: var(--theme-dark-blue);">National Policy & Legislative
-                Framework</h2>
+        <!-- Section Header -->
+        <div class="text-center mb-5" data-aos="fade-up">
+          <span
+            class="badge bg-primary bg-opacity-10 text-primary border border-primary border-opacity-10 rounded-pill px-3 py-2 text-uppercase tracking-wider fw-bold mb-3">Statutory
+            Framework</span>
+          <h2 class="display-5 fw-bold text-dark mb-2">National Policy on Narcotic Drugs</h2>
+          <div class="kb-sep-line mx-auto bg-primary mt-3" style="width: 60px; height: 3px; border-radius: 2px;"></div>
+        </div>
 
-              <p class="text-secondary lead" style="font-size: 1.1rem;">
-                The National Policy on Narcotic Drugs is rooted in <strong>Article 47</strong> of the Indian
-                Constitution, directing the State to endeavour to bring about prohibition of the consumption of
-                intoxicating drugs injurious to health.
-              </p>
+        <!-- BENTO GRID (Article 47 + Conventions) -->
+        <div class="kb-bento-grid mb-0"> <!-- Removed bottom margin as section ends here -->
 
-              <p class="text-muted small mb-4">
-                This constitutional provision is further guided by India's commitment as a signatory to international
-                conventions:
-                <span class="d-block mt-2">
-                  <i class="fas fa-check-circle text-success me-1"></i> Single Convention on Narcotic Drugs, 1961<br>
-                  <i class="fas fa-check-circle text-success me-1"></i> Convention on Psychotropic Substances,
-                  1971<br>
-                  <i class="fas fa-check-circle text-success me-1"></i> UN Convention against Illicit Traffic, 1988
-                </span>
-              </p>
-
-              <h5 class="fw-bold text-primary mb-3">Broad Legislative Policy</h5>
-              <p class="text-muted mb-4">
-                The legislative framework is contained in three Central Acts:
-              </p>
-              <div class="row g-3 mb-4">
-                <div class="col-md-4">
-                  <div class="p-3 bg-light rounded-3 h-100 border border-light shadow-sm">
-                    <strong class="d-block text-dark mb-1">1940</strong>
-                    <span class="small text-secondary">Drugs & Cosmetics Act</span>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="p-3 bg-white rounded-3 h-100 border border-primary border-opacity-25 shadow-sm">
-                    <strong class="d-block text-primary mb-1">1985</strong>
-                    <span class="small text-secondary">The NDPS Act</span>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="p-3 bg-light rounded-3 h-100 border border-light shadow-sm">
-                    <strong class="d-block text-dark mb-1">1988</strong>
-                    <span class="small text-secondary">Prevention of Illicit Traffic Act</span>
-                  </div>
-                </div>
+          <!-- Left: Mandate Card -->
+          <div class="kb-glass-panel" data-aos="fade-right">
+            <div class="kb-mandate-box">
+              <div class="kb-mandate-decor"></div>
+              <div class="kb-article-badge">
+                <i class="fas fa-balance-scale me-2"></i> Constitution of India
               </div>
 
-              <p class="text-muted small border-start border-4 border-primary ps-3 fst-italic">
-                The <strong>Narcotics Control Bureau</strong> was constituted on 17th March 1986 as the Central
-                Authority under the NDPS Act, 1985 to coordinate drug abuse control functions across various
-                Ministries and Departments.
+              <h3 class="kb-quote-text">Article 47</h3>
+              <p class="lead text-secondary mb-4" style="line-height: 1.8;">
+                "The State shall endeavour to bring about prohibition of the consumption, except for medicinal purposes,
+                of intoxicating drugs injurious to health."
               </p>
 
-              <a href="about.html" class="btn btn-primary rounded-pill px-4 mt-2">
-                Read More about NCB <i class="fas fa-arrow-right ms-2"></i>
-              </a>
-            </div>
-          </div>
-
-          <!-- Right Column: Visual -->
-          <div class="col-lg-5">
-            <div class="position-relative">
-              <div class="kb-feature-card text-center border-0 shadow-lg p-5"
-                style="background: linear-gradient(135deg, var(--theme-dark-blue), var(--theme-primary)); color: white;">
-                <i class="fas fa-balance-scale fa-4x mb-4 text-info opacity-75"></i>
-                <h3 class="fw-bold mb-3">Zero Tolerance</h3>
-                <p class="opacity-75 mb-4">Committed to a Drug-Free India through Intelligence, Enforcement &
-                  Coordination.</p>
-
-                <div class="d-flex justify-content-center gap-3 mt-4">
-                  <div class="text-center">
-                    <h2 class="fw-bold text-warning mb-0">1986</h2>
-                    <span class="small text-white-50">Established</span>
-                  </div>
-                  <div class="vr bg-light opacity-25"></div>
-                  <div class="text-center">
-                    <h2 class="fw-bold text-info mb-0">24x7</h2>
-                    <span class="small text-white-50">Enforcement</span>
-                  </div>
+              <div class="d-flex align-items-center mt-auto pt-4 border-top border-dark border-opacity-10">
+                <div class="bg-primary rounded-circle p-2 me-3 text-white">
+                  <i class="fas fa-arrow-right"></i>
                 </div>
-              </div>
-              <!-- Decorative Element -->
-              <div style="position: absolute; top: -20px; right: -20px; z-index: -1;">
-                <i class="fas fa-shield-alt text-light opacity-50"
-                  style="font-size: 15rem; transform: rotate(15deg);"></i>
+                <span class="small fw-bold text-muted text-uppercase tracking-wide">Foundation of Policy</span>
               </div>
             </div>
           </div>
 
+          <!-- Right: International Conventions -->
+          <div class="kb-conventions-grid">
+
+            <div class="kb-convention-item" data-aos="fade-left" data-aos-delay="100">
+              <div class="kb-conv-year">1961</div>
+              <div class="kb-conv-info">
+                <h6>Single Convention</h6>
+                <span class="small text-muted">on Narcotic Drugs</span>
+              </div>
+            </div>
+
+            <div class="kb-convention-item" data-aos="fade-left" data-aos-delay="200">
+              <div class="kb-conv-year">1971</div>
+              <div class="kb-conv-info">
+                <h6>Convention on</h6>
+                <span class="small text-muted">Psychotropic Substances</span>
+              </div>
+            </div>
+
+            <div class="kb-convention-item" data-aos="fade-left" data-aos-delay="300">
+              <div class="kb-conv-year">1988</div>
+              <div class="kb-conv-info">
+                <h6>UN Convention</h6>
+                <span class="small text-muted">Against Illicit Traffic</span>
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- DG MESSAGE SECTION -->
-    <section class="kb-dg-section">
-      <div class="container">
-        <div class="row g-4 align-items-center">
+    <!-- SECTION 2: LEGISLATION & ACTION (White Background) -->
+    <section class="kb-policy-legislation" id="policy-legislation">
+      <div class="container kb-policy-content">
 
-          <!-- Left: Profile Card -->
-          <div class="col-lg-4" data-aos="fade-right">
-            <div class="kb-dg-card">
-              <div class="kb-dg-img-wrapper">
-                <!-- Placeholder Image - User to replace -->
-                <img src="img/profile.jpeg" alt="Shri Anurag Garg" class="kb-dg-img">
-              </div>
-
-              <h3 class="kb-dg-name">Shri Anurag Garg</h3>
-              <div class="kb-dg-desig">Director General (IPS)</div>
-              <div class="kb-dg-batch">Himachal Pradesh: 1993</div>
-
-              <div class="kb-dg-org">
-                Narcotics Control Bureau<br>
-                <div class="small fw-normal text-white-50 mt-1">Ministry of Home Affairs</div>
-                <div class="small fw-normal text-white-50">Government of India</div>
-              </div>
-            </div>
+        <!-- TIMELINE SECTION -->
+        <div class="kb-timeline-container pt-4" data-aos="fade-up"> <!-- Added padding top -->
+          <div class="text-center mb-5">
+            <h3 class="fw-bold display-6">Legislative Evolution</h3>
+            <p class="text-muted">Three Central Acts that form the backbone of drug law enforcement.</p>
           </div>
 
-          <!-- Right: Message Content -->
-          <div class="col-lg-8" data-aos="fade-left">
-            <div class="kb-dg-content position-relative">
-              <i class="fas fa-quote-right kb-quote-icon"></i>
+          <div class="kb-timeline-track">
+            <!-- Item 1 -->
+            <div class="kb-timeline-node">
+              <span class="kb-node-year">1940</span>
+              <div class="kb-node-dot"></div>
+              <h5 class="kb-node-title">Drugs & Cosmetics Act</h5>
+              <p class="small text-muted px-3">Regulates import, manufacture & distribution.</p>
+            </div>
 
-              <h3 class="fs-4 fw-bold text-gradient-gold">Dear Friends,</h3>
+            <!-- Item 2 -->
+            <div class="kb-timeline-node">
+              <span class="kb-node-year text-primary" style="opacity: 1;">1985</span>
+              <div class="kb-node-dot" style="border-color: var(--theme-accent-blue); transform: scale(1.1);"></div>
+              <h5 class="kb-node-title text-primary">The NDPS Act</h5>
+              <p class="small text-muted px-3">Narcotic Drugs and Psychotropic Substances Act.</p>
+            </div>
 
-              <p>
-                Welcome to the official website of the Narcotics Control Bureau (NCB), India. As the nation's premier
-                agency in the fight against drug trafficking and abuse, the NCB is committed to safeguarding the health
-                and security of our society by eliminating the menace of narcotic drugs and psychotropic substances.
-              </p>
-
-              <p>
-                Our mission is multifaceted—ranging from intelligence gathering and enforcement to rehabilitation
-                efforts and public awareness. We work relentlessly to strengthen coordination among central and state
-                agencies and engage with international partners to ensure that India's borders remain impervious to the
-                illicit drug trade.
-              </p>
-
-              <p class="mb-0">
-                In recent years, we have made significant strides in curbing drug-related crimes through our focused
-                operations, enhanced inter-agency collaboration, and increased technological capabilities. Together, let
-                us strive for a drug-free India.
-              </p>
-
-              <div class="mt-4 text-end">
-                <span class="fs-5 fw-bold" style="font-family: 'Dancing Script', cursive; color: #fff;">Warm
-                  Regards</span>
-              </div>
+            <!-- Item 3 -->
+            <div class="kb-timeline-node">
+              <span class="kb-node-year">1988</span>
+              <div class="kb-node-dot"></div>
+              <h5 class="kb-node-title">PITNDPS Act</h5>
+              <p class="small text-muted px-3">Prevention of Illicit Traffic in Narcotic Drugs.</p>
             </div>
           </div>
-
         </div>
+
+        <!-- GENESIS & FUNCTIONS SPLIT CARD -->
+        <div class="kb-genesis-wrapper mt-5" data-aos="fade-in">
+          <div class="row g-0">
+            <div class="col-lg-4 kb-genesis-left">
+              <h3 class="fw-bold mb-2">Genesis of NCB</h3>
+              <p class="opacity-75 mb-4 small text-uppercase tracking-wider">Established 17th March, 1986</p>
+              <p class="mb-4" style="line-height: 1.7; opacity: 0.9;">
+                Born from the mandate of the NDPS Act, 1985, to serve as the nodal agency for drug law enforcement in
+                India.
+              </p>
+              <a href="about.html" class="btn btn-outline-light rounded-pill px-4 align-self-start">Read Charter</a>
+            </div>
+
+            <div class="col-lg-8 kb-genesis-right">
+              <h5 class="fw-bold text-dark mb-4">Core Functions</h5>
+              <div class="kb-func-grid">
+                <!-- Function 1 -->
+                <div class="kb-func-item">
+                  <div class="kb-func-icon-box">
+                    <i class="fas fa-network-wired"></i>
+                  </div>
+                  <div>
+                    <h6 class="fw-bold text-dark mb-1">Coordination</h6>
+                    <p class="small text-muted mb-0">Between State Governments and other authorities.</p>
+                  </div>
+                </div>
+
+                <!-- Function 2 -->
+                <div class="kb-func-item">
+                  <div class="kb-func-icon-box" style="color: #eab308; background: #fefce8;">
+                    <i class="fas fa-globe"></i>
+                  </div>
+                  <div>
+                    <h6 class="fw-bold text-dark mb-1">Intl. Obligations</h6>
+                    <p class="small text-muted mb-0">Fulfilment of counter-measures under conventions.</p>
+                  </div>
+                </div>
+
+                <!-- Function 3 -->
+                <div class="kb-func-item">
+                  <div class="kb-func-icon-box" style="color: #22c55e; background: #f0fdf4;">
+                    <i class="fas fa-handshake"></i>
+                  </div>
+                  <div>
+                    <h6 class="fw-bold text-dark mb-1">Assistance</h6>
+                    <p class="small text-muted mb-0">To foreign authorities and international organizations.</p>
+                  </div>
+                </div>
+
+                <!-- Function 4 -->
+                <div class="kb-func-item">
+                  <div class="kb-func-icon-box" style="color: #06b6d4; background: #ecfeff;">
+                    <i class="fas fa-users-cog"></i>
+                  </div>
+                  <div>
+                    <h6 class="fw-bold text-dark mb-1">Drug Abuse Control</h6>
+                    <p class="small text-muted mb-0">Liaison with relevant Ministries for health & welfare.</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Zonal Offices Marquee (Kept but styled cleaner) -->
+        <div class="mt-5 border-top pt-4">
+          <p class="text-center text-muted small text-uppercase tracking-wider mb-3">Our Pan-India Presence</p>
+          <div class="kb-marquee-wrapper bg-transparent border-0 py-2">
+            <div class="kb-marquee-content text-dark opacity-75 fw-medium">
+              <span class="kb-marquee-item">Agartala</span>
+              <span class="kb-marquee-item">Ahmedabad</span>
+              <span class="kb-marquee-item">Amritsar</span>
+              <span class="kb-marquee-item">Bangalore</span>
+              <span class="kb-marquee-item">Bhopal</span>
+              <span class="kb-marquee-item">Bhubaneswar</span>
+              <span class="kb-marquee-item">Chandigarh</span>
+              <span class="kb-marquee-item">Chennai</span>
+              <span class="kb-marquee-item">Cochin</span>
+              <span class="kb-marquee-item">Dehradun</span>
+              <span class="kb-marquee-item">Delhi</span>
+              <span class="kb-marquee-item">Goa</span>
+              <span class="kb-marquee-item">Gorakhpur</span>
+              <span class="kb-marquee-item">Guwahati</span>
+              <span class="kb-marquee-item">Hyderabad</span>
+              <span class="kb-marquee-item">Imphal</span>
+              <span class="kb-marquee-item">Indore</span>
+              <span class="kb-marquee-item">Itanagar</span>
+              <span class="kb-marquee-item">Jaipur</span>
+              <span class="kb-marquee-item">Jammu</span>
+              <span class="kb-marquee-item">Jodhpur</span>
+              <span class="kb-marquee-item">Kolkata</span>
+              <span class="kb-marquee-item">Lucknow</span>
+              <span class="kb-marquee-item">Mumbai</span>
+              <span class="kb-marquee-item">Patna</span>
+              <span class="kb-marquee-item">Raipur</span>
+              <span class="kb-marquee-item">Ranchi</span>
+              <span class="kb-marquee-item">Siliguri</span>
+              <span class="kb-marquee-item">Srinagar</span>
+              <span class="kb-marquee-item">Vishakhapatnam</span>
+              <span class="kb-marquee-item">Agartala</span>
+              <span class="kb-marquee-item">Ahmedabad</span>
+              <span class="kb-marquee-item">Amritsar</span>
+              <span class="kb-marquee-item">Bangalore</span>
+              <span class="kb-marquee-item">Bhopal</span>
+              <span class="kb-marquee-item">Bhubaneswar</span>
+              <span class="kb-marquee-item">Chandigarh</span>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
+
+
 
   </main>
   </div>
@@ -389,151 +596,336 @@
   <!-- ==================== UPDATES SECTION (Activities, Events, News) ==================== -->
   <section class="kb-updates-section">
     <div class="container">
-      <div class="row">
-
-        <div class="col-lg-4 mb-4 mb-lg-0">
-          <div class="kb-update-card">
-            <div class="kb-card-header d-flex justify-content-between align-items-center">
-              <div class="d-flex align-items-center gap-2">
-                <i class="bi bi-activity"></i>
-                <h5 class="mb-0">Recent Activities</h5>
-              </div>
-              <button class="btn btn-sm btn-light rounded-circle kb-scroll-toggle" title="Pause/Play">
-                <i class="bi bi-pause-fill"></i>
-              </button>
-            </div>
-            <div class="kb-card-body">
-              <div class="kb-scroll-view">
-                <div class="kb-scroll-wrapper">
-                  <ul class="kb-update-list">
-                    <li>
-                      <span class="kb-date">Dec 24, 2024</span>
-                      <p>Health Checkup Camp aimed at providing free medical checkups.</p>
-                    </li>
-                    <li>
-                      <span class="kb-date">Dec 20, 2024</span>
-                      <p>Yoga Session for senior citizens at Community Centre.</p>
-                    </li>
-                    <li>
-                      <span class="kb-date">Dec 15, 2024</span>
-                      <p>Art & Craft Workshop organized for children.</p>
-                    </li>
-                    <!-- Duplicate content for seamless scrolling -->
-                    <li>
-                      <span class="kb-date">Dec 24, 2024</span>
-                      <p>Health Checkup Camp aimed at providing free medical checkups.</p>
-                    </li>
-                    <li>
-                      <span class="kb-date">Dec 20, 2024</span>
-                      <p>Yoga Session for senior citizens at Community Centre.</p>
-                    </li>
-                    <li>
-                      <span class="kb-date">Dec 15, 2024</span>
-                      <p>Art & Craft Workshop organized for children.</p>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <a href="#" class="kb-read-more">View All Activities <i class="bi bi-arrow-right"></i></a>
-            </div>
+      <div class="row align-items-center mb-5" data-aos="fade-up">
+        <div class="col-8">
+          <h2 class="kb-section-title d-inline-block position-relative pb-3 mb-0 text-start">Latest Updates &
+            Notifications</h2>
+        </div>
+        <div class="col-4 text-end">
+          <div class="d-inline-flex gap-2">
+            <button class="btn btn-outline-primary rounded-circle kb-slider-prev p-2" aria-label="Previous Slide">
+              <i class="bi bi-chevron-left"></i>
+            </button>
+            <button class="btn btn-outline-primary rounded-circle kb-slider-next p-2" aria-label="Next Slide">
+              <i class="bi bi-chevron-right"></i>
+            </button>
           </div>
         </div>
-
-        <!-- CARD 2: EVENTS -->
-        <div class="col-lg-4 mb-4 mb-lg-0">
-          <div class="kb-update-card">
-            <div class="kb-card-header d-flex justify-content-between align-items-center">
-              <div class="d-flex align-items-center gap-2">
-                <i class="bi bi-calendar-event"></i>
-                <h5 class="mb-0">Upcoming Events</h5>
-              </div>
-              <button class="btn btn-sm btn-light rounded-circle kb-scroll-toggle" title="Pause/Play">
-                <i class="bi bi-pause-fill"></i>
-              </button>
-            </div>
-            <div class="kb-card-body">
-              <div class="kb-scroll-view">
-                <div class="kb-scroll-wrapper">
-                  <ul class="kb-update-list">
-                    <li>
-                      <span class="kb-date">Jan 01, 2025</span>
-                      <p>New Year Celebration Event at Main Auditorium.</p>
-                    </li>
-                    <li>
-                      <span class="kb-date">Jan 15, 2025</span>
-                      <p>Annual Sports Day Registration begins.</p>
-                    </li>
-                    <li>
-                      <span class="kb-date">Jan 26, 2025</span>
-                      <p>Republic Day Parade & Flag Hoisting Ceremony.</p>
-                    </li>
-                    <!-- Duplicate content -->
-                    <li>
-                      <span class="kb-date">Jan 01, 2025</span>
-                      <p>New Year Celebration Event at Main Auditorium.</p>
-                    </li>
-                    <li>
-                      <span class="kb-date">Jan 15, 2025</span>
-                      <p>Annual Sports Day Registration begins.</p>
-                    </li>
-                    <li>
-                      <span class="kb-date">Jan 26, 2025</span>
-                      <p>Republic Day Parade & Flag Hoisting Ceremony.</p>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <a href="#" class="kb-read-more">View All Events <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- CARD 3: NEWS UPDATES -->
-        <div class="col-lg-4">
-          <div class="kb-update-card">
-            <div class="kb-card-header d-flex justify-content-between align-items-center">
-              <div class="d-flex align-items-center gap-2">
-                <i class="bi bi-newspaper"></i>
-                <h5 class="mb-0">News Updates</h5>
-              </div>
-              <button class="btn btn-sm btn-light rounded-circle kb-scroll-toggle" title="Pause/Play">
-                <i class="bi bi-pause-fill"></i>
-              </button>
-            </div>
-            <div class="kb-card-body">
-              <div class="kb-scroll-view">
-                <div class="kb-scroll-wrapper">
-                  <ul class="kb-update-list">
-                    <li>
-                      <span class="kb-tag">New</span>
-                      <p>Grih Kalyan Kendra announces new welfare schemes for 2025.</p>
-                    </li>
-                    <li>
-                      <p>Updated guidelines for booking community halls released.</p>
-                    </li>
-                    <li>
-                      <p>Maintenance work scheduled for Delhi centers next week.</p>
-                    </li>
-                    <!-- Duplicate content -->
-                    <li>
-                      <span class="kb-tag">New</span>
-                      <p>Grih Kalyan Kendra announces new welfare schemes for 2025.</p>
-                    </li>
-                    <li>
-                      <p>Updated guidelines for booking community halls released.</p>
-                    </li>
-                    <li>
-                      <p>Maintenance work scheduled for Delhi centers next week.</p>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <a href="#" class="kb-read-more">Read Recent News <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-        </div>
-
       </div>
+
+      <div class="kb-slider-container">
+        <div class="kb-slider-track">
+
+          <div class="col-lg-4 mb-4 mb-lg-0 kb-slide-item">
+            <div class="kb-update-card">
+              <div class="kb-card-header d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center gap-2">
+                  <i class="bi bi-activity"></i>
+                  <h5 class="mb-0">Recent Activities</h5>
+                </div>
+                <button class="btn btn-sm btn-light rounded-circle kb-scroll-toggle" title="Pause/Play">
+                  <i class="bi bi-pause-fill"></i>
+                </button>
+              </div>
+              <div class="kb-card-body">
+                <div class="kb-scroll-view">
+                  <div class="kb-scroll-wrapper">
+                    <ul class="kb-update-list">
+                      <!-- Original 10 Items (Set A) -->
+                      <li>
+                        <span class="kb-date">Dec 28, 2024</span>
+                        <p>Seizure of 500kg contraband in high-seas operation off Gujarat coast.</p>
+                      </li>
+                      <li>
+                        <span class="kb-date">Dec 20, 2024</span>
+                        <p>Capacity Building Workshop on NDPS Act for State Police Officials.</p>
+                      </li>
+                      <li>
+                        <span class="kb-date">Dec 15, 2024</span>
+                        <p>Inter-Agency Coordination Meeting held at Headquarters, New Delhi.</p>
+                      </li>
+                      <li>
+                        <span class="kb-date">Dec 05, 2024</span>
+                        <p>Joint operation with BSF leads to apprehension of 3 smugglers.</p>
+                      </li>
+                      <li>
+                        <span class="kb-date">Nov 28, 2024</span>
+                        <p>Awareness campaign 'Say No to Drugs' launched in 50 universities.</p>
+                      </li>
+                      <li>
+                        <span class="kb-date">Nov 15, 2024</span>
+                        <p>Destruction of 1500kg seized narcotics at designated facility.</p>
+                      </li>
+                      <li>
+                        <span class="kb-date">Nov 10, 2024</span>
+                        <p>Review meeting chaired by Director General regarding border security.</p>
+                      </li>
+                      <li>
+                        <span class="kb-date">Nov 05, 2024</span>
+                        <p>Training session on cyber-forensics for new recruits embarked.</p>
+                      </li>
+                      <li>
+                        <span class="kb-date">Oct 30, 2024</span>
+                        <p>Regional conference with international counterparts on drug trafficking.</p>
+                      </li>
+                      <li>
+                        <span class="kb-date">Oct 20, 2024</span>
+                        <p>Public outreach program conducted in border villages of Punjab.</p>
+                      </li>
+
+                      <!-- Duplicate 10 Items (Set B) -->
+                      <li>
+                        <span class="kb-date">Dec 28, 2024</span>
+                        <p>Seizure of 500kg contraband in high-seas operation off Gujarat coast.</p>
+                      </li>
+                      <li>
+                        <span class="kb-date">Dec 20, 2024</span>
+                        <p>Capacity Building Workshop on NDPS Act for State Police Officials.</p>
+                      </li>
+                      <li>
+                        <span class="kb-date">Dec 15, 2024</span>
+                        <p>Inter-Agency Coordination Meeting held at Headquarters, New Delhi.</p>
+                      </li>
+                      <li>
+                        <span class="kb-date">Dec 05, 2024</span>
+                        <p>Joint operation with BSF leads to apprehension of 3 smugglers.</p>
+                      </li>
+                      <li>
+                        <span class="kb-date">Nov 28, 2024</span>
+                        <p>Awareness campaign 'Say No to Drugs' launched in 50 universities.</p>
+                      </li>
+                      <li>
+                        <span class="kb-date">Nov 15, 2024</span>
+                        <p>Destruction of 1500kg seized narcotics at designated facility.</p>
+                      </li>
+                      <li>
+                        <span class="kb-date">Nov 10, 2024</span>
+                        <p>Review meeting chaired by Director General regarding border security.</p>
+                      </li>
+                      <li>
+                        <span class="kb-date">Nov 05, 2024</span>
+                        <p>Training session on cyber-forensics for new recruits embarked.</p>
+                      </li>
+                      <li>
+                        <span class="kb-date">Oct 30, 2024</span>
+                        <p>Regional conference with international counterparts on drug trafficking.</p>
+                      </li>
+                      <li>
+                        <span class="kb-date">Oct 20, 2024</span>
+                        <p>Public outreach program conducted in border villages of Punjab.</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <a href="#" class="kb-read-more border-top">View All Activities <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 2: PRESS RELEASES -->
+          <div class="col-lg-4 mb-4 mb-lg-0 kb-slide-item">
+            <div class="kb-update-card">
+              <div class="kb-card-header d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center gap-2">
+                  <i class="bi bi-file-earmark-text"></i>
+                  <h5 class="mb-0">Press Releases</h5>
+                </div>
+                <button class="btn btn-sm btn-light rounded-circle kb-scroll-toggle" title="Pause/Play">
+                  <i class="bi bi-pause-fill"></i>
+                </button>
+              </div>
+              <div class="kb-card-body">
+                <div class="kb-scroll-view">
+                  <div class="kb-scroll-wrapper">
+                    <ul class="kb-update-list">
+                      <!-- Original 10 Items (Set A) -->
+                      <li>
+                        <span class="kb-date">Jan 01, 2026</span>
+                        <p>Notification regarding regulation of Controlled Substances 2025.</p>
+                      </li>
+                      <li>
+                        <span class="kb-date">Dec 25, 2025</span>
+                        <p>Inauguration of new Zonal Unit in Agartala by Hon'ble Minister.</p>
+                      </li>
+                      <li>
+                        <span class="kb-date">Dec 10, 2025</span>
+                        <p>Clarification on recent amendment to NDPS Rules 2024.</p>
+                      </li>
+                      <li>
+                        <span class="kb-date">Nov 30, 2025</span>
+                        <p>Press Note: Successful conclusion of pan-India Operation 'Clean Sweep'.</p>
+                      </li>
+                      <li>
+                        <span class="kb-date">Nov 15, 2025</span>
+                        <p>Draft Guidelines released for control of chemical precursors.</p>
+                      </li>
+                      <li>
+                        <span class="kb-date">Nov 01, 2025</span>
+                        <p>Clarification issued regarding compliance for online pharmacies.</p>
+                      </li>
+                      <li>
+                        <span class="kb-date">Oct 20, 2025</span>
+                        <p>Recruitment notice for the post of Junior Intelligence Officer 2025.</p>
+                      </li>
+                      <li>
+                        <span class="kb-date">Oct 05, 2025</span>
+                        <p>Public Advisory: Identifying and reporting suspicious darknet activities.</p>
+                      </li>
+                      <li>
+                        <span class="kb-date">Sep 25, 2025</span>
+                        <p>Press Briefing: Quarterly report on drug seizure statistics released.</p>
+                      </li>
+                      <li>
+                        <span class="kb-date">Sep 10, 2025</span>
+                        <p>Notice: Mandatory registration for chemical precursor manufacturers.</p>
+                      </li>
+
+                      <!-- Duplicate 10 Items (Set B) -->
+                      <li>
+                        <span class="kb-date">Jan 01, 2026</span>
+                        <p>Notification regarding regulation of Controlled Substances 2025.</p>
+                      </li>
+                      <li>
+                        <span class="kb-date">Dec 25, 2025</span>
+                        <p>Inauguration of new Zonal Unit in Agartala by Hon'ble Minister.</p>
+                      </li>
+                      <li>
+                        <span class="kb-date">Dec 10, 2025</span>
+                        <p>Clarification on recent amendment to NDPS Rules 2024.</p>
+                      </li>
+                      <li>
+                        <span class="kb-date">Nov 30, 2025</span>
+                        <p>Press Note: Successful conclusion of pan-India Operation 'Clean Sweep'.</p>
+                      </li>
+                      <li>
+                        <span class="kb-date">Nov 15, 2025</span>
+                        <p>Draft Guidelines released for control of chemical precursors.</p>
+                      </li>
+                      <li>
+                        <span class="kb-date">Nov 01, 2025</span>
+                        <p>Clarification issued regarding compliance for online pharmacies.</p>
+                      </li>
+                      <li>
+                        <span class="kb-date">Oct 20, 2025</span>
+                        <p>Recruitment notice for the post of Junior Intelligence Officer 2025.</p>
+                      </li>
+                      <li>
+                        <span class="kb-date">Oct 05, 2025</span>
+                        <p>Public Advisory: Identifying and reporting suspicious darknet activities.</p>
+                      </li>
+                      <li>
+                        <span class="kb-date">Sep 25, 2025</span>
+                        <p>Press Briefing: Quarterly report on drug seizure statistics released.</p>
+                      </li>
+                      <li>
+                        <span class="kb-date">Sep 10, 2025</span>
+                        <p>Notice: Mandatory registration for chemical precursor manufacturers.</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <a href="#" class="kb-read-more border-top">View All Press Releases <i
+                    class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 3: NEWS UPDATES -->
+          <div class="col-lg-4 kb-slide-item">
+            <div class="kb-update-card">
+              <div class="kb-card-header d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center gap-2">
+                  <i class="bi bi-newspaper"></i>
+                  <h5 class="mb-0">News Updates</h5>
+                </div>
+                <button class="btn btn-sm btn-light rounded-circle kb-scroll-toggle" title="Pause/Play">
+                  <i class="bi bi-pause-fill"></i>
+                </button>
+              </div>
+              <div class="kb-card-body">
+                <div class="kb-scroll-view">
+                  <div class="kb-scroll-wrapper">
+                    <ul class="kb-update-list">
+                      <!-- Original 10 Items (Set A) -->
+                      <li>
+                        <span class="kb-tag">New</span>
+                        <p>Notification regarding regulation of Controlled Substances 2025.</p>
+                      </li>
+                      <li>
+                        <p>Inauguration of new Zonal Unit in Agartala to strengthen enforcement.</p>
+                      </li>
+                      <li>
+                        <p>Press Release: Major syndicate bused in Mumbai Port Trust operation.</p>
+                      </li>
+                      <li>
+                        <span class="kb-tag">Update</span>
+                        <p>India elected as member of UN Commission on Narcotic Drugs.</p>
+                      </li>
+                      <li>
+                        <p>New digital platform launched for anonymous reporting of suspicious activities.</p>
+                      </li>
+                      <li>
+                        <p>Training program on darknet investigation concludes at NCB Academy.</p>
+                      </li>
+                      <li>
+                        <p>MOU signed with Coast Guard for enhanced maritime surveillance.</p>
+                      </li>
+                      <li>
+                        <span class="kb-tag">Alert</span>
+                        <p>Warning regarding new psychoactive substances detected in market.</p>
+                      </li>
+                      <li>
+                        <p>Annual Report 2024-25 released by Ministry of Home Affairs.</p>
+                      </li>
+                      <li>
+                        <p>Special task force constituted to tackle cross-border smuggling.</p>
+                      </li>
+
+                      <!-- Duplicate 10 Items (Set B) -->
+                      <li>
+                        <span class="kb-tag">New</span>
+                        <p>Notification regarding regulation of Controlled Substances 2025.</p>
+                      </li>
+                      <li>
+                        <p>Inauguration of new Zonal Unit in Agartala to strengthen enforcement.</p>
+                      </li>
+                      <li>
+                        <p>Press Release: Major syndicate bused in Mumbai Port Trust operation.</p>
+                      </li>
+                      <li>
+                        <span class="kb-tag">Update</span>
+                        <p>India elected as member of UN Commission on Narcotic Drugs.</p>
+                      </li>
+                      <li>
+                        <p>New digital platform launched for anonymous reporting of suspicious activities.</p>
+                      </li>
+                      <li>
+                        <p>Training program on darknet investigation concludes at NCB Academy.</p>
+                      </li>
+                      <li>
+                        <p>MOU signed with Coast Guard for enhanced maritime surveillance.</p>
+                      </li>
+                      <li>
+                        <span class="kb-tag">Alert</span>
+                        <p>Warning regarding new psychoactive substances detected in market.</p>
+                      </li>
+                      <li>
+                        <p>Annual Report 2024-25 released by Ministry of Home Affairs.</p>
+                      </li>
+                      <li>
+                        <p>Special task force constituted to tackle cross-border smuggling.</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <a href="#" class="kb-read-more border-top">Read Recent News <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
     </div>
   </section>
 
@@ -569,62 +961,81 @@
   <section class="kb-contact-section">
     <div class="kb-contact-map-bg"></div>
     <div class="container position-relative">
-      <div class="row">
-        <!-- Contact NCB -->
-        <div class="col-lg-6 mb-5 mb-lg-0">
-          <h3 class="kb-contact-title">Contact NCB</h3>
+      <div class="text-center mb-5" data-aos="fade-up">
+        <h2 class="kb-contact-title mb-2">Contact & Enquiry</h2>
+        <p class="text-white-50">Report Incidents of Drug Trafficking / Accident or Serious Incidents</p>
+      </div>
 
-          <div class="kb-contact-block">
-            <p class="kb-contact-subtitle mb-3">Report Incidents of Drug Trafficking / Accident or Serious Incidents</p>
+      <div class="row g-4 align-items-stretch">
+        <!-- Contact Info Card -->
+        <div class="col-lg-5" data-aos="fade-right">
+          <div class="kb-contact-block h-100">
+            <h4 class="kb-contact-subtitle text-gradient-gold mb-4"><i class="bi bi-geo-alt-fill me-2"></i> Headquarters
+            </h4>
 
-            <div class="d-flex align-items-center mb-2">
-              <span class="me-2 opacity-75">Telephone No. :</span>
-              <span class="fs-4 fw-bold text-gradient-gold">+91-11-26761000</span>
+            <div class="mb-4">
+              <strong class="d-block text-white fs-5 mb-2">Narcotics Control Bureau</strong>
+              <p class="opacity-75 mb-0">West Block No. 1, Wing No. 5,<br> R.K. Puram, New Delhi - 110066</p>
             </div>
 
-            <div class="d-flex align-items-start">
-              <span class="me-2 opacity-75 text-nowrap">Email Id. :</span>
-              <div>
-                <a href="mailto:ddge-ncb@nic.in"
-                  class="d-inline-block text-white text-decoration-none border-bottom border-white border-opacity-25 pb-0 mb-1 hover-lift">ddge-ncb@nic.in</a>
-                <span class="mx-1">&</span>
-                <a href="mailto:adenf-ncb@nic.in"
-                  class="d-inline-block text-white text-decoration-none border-bottom border-white border-opacity-25 pb-0 hover-lift">adenf-ncb@nic.in</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- General Enquiry -->
-        <div class="col-lg-6">
-          <h3 class="kb-contact-title">General Enquiry</h3>
-
-          <div class="kb-contact-block">
-            <div class="row">
-              <div class="col-md-6 mb-3 mb-md-0">
-                <strong class="d-block mb-2 fs-5">NARCOTICS CONTROL BUREAU</strong>
-                <address class="fst-normal opacity-90 mb-0">
-                  West Block No. 1, Wing No. 5,<br>
-                  RK Puram,<br>
-                  New Delhi-110066
-                </address>
-              </div>
-
-              <div class="col-md-6">
-                <div class="mb-3">
-                  <span class="d-block opacity-75 mb-1">Email Address :</span>
-                  <a href="mailto:adops-ncb@nic.in"
-                    class="text-white text-decoration-none border-bottom border-white border-opacity-25 pb-0 hover-lift">adops-ncb@nic.in</a>
+            <div class="d-flex flex-column gap-3">
+              <div class="d-flex align-items-center gap-3">
+                <div class="kb-icon-box-glass">
+                  <i class="bi bi-telephone-fill"></i>
                 </div>
-
                 <div>
-                  <span class="d-block opacity-75 mb-1">Telephone No.</span>
-                  <div class="d-flex flex-column gap-1">
-                    <span>+91-11-26761000</span>
-                    <span>+91-11-26761144</span>
+                  <span class="d-block text-white-50 small">Control Room</span>
+                  <div class="d-flex flex-column">
+                    <span class="fw-bold text-white">+91-11-26761000</span>
+                    <span class="fw-bold text-white">+91-11-26761144</span>
                   </div>
                 </div>
               </div>
+
+              <div class="d-flex align-items-center gap-3">
+                <div class="kb-icon-box-glass">
+                  <i class="bi bi-envelope-fill"></i>
+                </div>
+                <div>
+                  <span class="d-block text-white-50 small">Email Support</span>
+                  <div class="d-flex flex-column">
+                    <a href="mailto:ddge-ncb@nic.in"
+                      class="text-white text-decoration-none hover-lift">ddge-ncb@nic.in</a>
+                    <a href="mailto:adenf-ncb@nic.in"
+                      class="text-white text-decoration-none hover-lift">adenf-ncb@nic.in</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <hr class="border-white opacity-10 my-4">
+
+            <h5 class="text-white mb-3">General Enquiry</h5>
+            <div class="d-flex align-items-center gap-3">
+              <div class="kb-icon-box-glass">
+                <i class="bi bi-info-circle-fill"></i>
+              </div>
+              <div>
+                <a href="mailto:adops-ncb@nic.in"
+                  class="d-block text-white text-decoration-none hover-lift">adops-ncb@nic.in</a>
+                <span class="text-white-50 small">Operations Division</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Google Map Embed -->
+        <div class="col-lg-7" data-aos="fade-left">
+          <div class="kb-contact-block p-2 h-100">
+            <div class="kb-map-frame h-100 w-100 rounded-4 overflow-hidden position-relative">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.656041300965!2d77.18049797619286!3d28.5601170757044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1d8677864fbd%3A0x6bba5b8304771c89!2sNarcotics%20Control%20Bureau!5e0!3m2!1sen!2sin!4v1709667823456!5m2!1sen!2sin"
+                width="100%" height="100%" style="border:0; min-height: 400px;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+              <!-- Map Overlay Gradient -->
+              <div class="kb-map-overlay"></div>
             </div>
           </div>
         </div>
@@ -643,31 +1054,34 @@
     <!-- ==================== GOVERNMENT LINKS SECTION ==================== -->
     <section class="kb-gov-links">
       <div class="container">
-        <div class="kb-gov-track">
-          <!-- Digital India -->
-          <a href="" target="_blank" class="kb-gov-item">
-            <img src="img/link1.png" alt="Digital India">
-          </a>
+        <div class="kb-gov-marquee-wrapper">
+          <div class="kb-gov-track">
+            <!-- ORIGINAL SET -->
+            <!-- Digital India -->
+            <a href="#" class="kb-gov-item"><img src="img/link1.png" alt="Digital India"></a>
+            <!-- India.gov.in -->
+            <a href="#" class="kb-gov-item"><img src="img/link2.jpeg" alt="National Portal of India"></a>
+            <!-- Election Commission -->
+            <a href="#" class="kb-gov-item"><img src="img/link3.png" alt="Election Commission of India"></a>
+            <!-- Make in India -->
+            <a href="#" class="kb-gov-item"><img src="img/link4.png" alt="Make in India"></a>
+            <!-- MyGov -->
+            <a href="#" class="kb-gov-item"><img src="img/link5.png" alt="MyGov"></a>
 
-          <!-- India.gov.in -->
-          <a href="" target="_blank" class="kb-gov-item">
-            <img src="img/link2.jpeg" alt="National Portal of India">
-          </a>
+            <!-- DUPLICATE SET 1 -->
+            <a href="#" class="kb-gov-item"><img src="img/link1.png" alt="Digital India"></a>
+            <a href="#" class="kb-gov-item"><img src="img/link2.jpeg" alt="National Portal of India"></a>
+            <a href="#" class="kb-gov-item"><img src="img/link3.png" alt="Election Commission of India"></a>
+            <a href="#" class="kb-gov-item"><img src="img/link4.png" alt="Make in India"></a>
+            <a href="#" class="kb-gov-item"><img src="img/link5.png" alt="MyGov"></a>
 
-          <!-- Election Commission (Placeholder) -->
-          <a href="" target="_blank" class="kb-gov-item">
-            <img src="img/link3.png" alt="Election Commission of India">
-          </a>
-
-          <!-- Make in India -->
-          <a href="" target="_blank" class="kb-gov-item">
-            <img src="img/link4.png" alt="Make in India">
-          </a>
-
-          <!-- MyGov -->
-          <a href="" target="_blank" class="kb-gov-item">
-            <img src="img/link5.png" alt="MyGov">
-          </a>
+            <!-- DUPLICATE SET 2 -->
+            <a href="#" class="kb-gov-item"><img src="img/link1.png" alt="Digital India"></a>
+            <a href="#" class="kb-gov-item"><img src="img/link2.jpeg" alt="National Portal of India"></a>
+            <a href="#" class="kb-gov-item"><img src="img/link3.png" alt="Election Commission of India"></a>
+            <a href="#" class="kb-gov-item"><img src="img/link4.png" alt="Make in India"></a>
+            <a href="#" class="kb-gov-item"><img src="img/link5.png" alt="MyGov"></a>
+          </div>
         </div>
       </div>
     </section>
@@ -770,37 +1184,21 @@
             }
           });
         });
-        // --- Announcement Strip Logic (Universal) ---
-        // Handles both Top Bar and Bottom Announcement Strip
-        const playButtons = document.querySelectorAll('.kb-announce-play');
 
-        playButtons.forEach(btn => {
-          btn.addEventListener('click', () => {
-            // Find the closest wrapper (top bar or announcement bar)
-            const parentBar = btn.closest('.kb-top-bar') || btn.closest('.kb-announcement-bar');
-            if (!parentBar) return;
-
-            const ticker = parentBar.querySelector('.kb-ticker-content');
-            const icon = btn.querySelector('i');
-
-            if (ticker && icon) {
-              ticker.classList.toggle('paused');
-
-              if (ticker.classList.contains('paused')) {
-                icon.classList.remove('fa-circle-play');
-                icon.classList.add('fa-circle-pause');
-              } else {
-                icon.classList.remove('fa-circle-pause');
-                icon.classList.add('fa-circle-play');
-              }
-            }
-          });
-        });
       });
     </script>
 
     <!-- Bootstrap JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+        offset: 100,
+        duration: 800,
+      });
+    </script>
 </body>
 
 </html>
