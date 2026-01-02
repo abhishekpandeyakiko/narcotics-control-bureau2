@@ -2287,7 +2287,7 @@ body {
 }
 
 .signature-font {
-  font-family: 'Dancing Script', cursive;
+  font-style: italic;
 }
 
 .backdrop-blur-sm {
